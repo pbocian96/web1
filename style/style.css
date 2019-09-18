@@ -7,7 +7,7 @@ body{
 
 nav {
     width:100vw;
-    height: 8vh;
+    height: 60px;
     position:fixed;
     top:0;
     left:0;
@@ -16,6 +16,7 @@ nav {
     align-items: center;
     background-color: rgb(30, 30, 30);
     box-shadow: 0 2px 5px 0 rgb(50, 50, 50);
+    z-index: 2;
 
 }
 nav li{
@@ -39,7 +40,7 @@ nav li a {
 .container{
     
     width:100vw;
-    height: 92vh;
+    height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -50,8 +51,7 @@ nav li a {
 }
 
 .container:nth-child(2){
-    margin-top: 8vh;
-    background-image: url('bg1.jpg');
+    background-image: url('bg5.jpg');
 }
 
 .container:nth-child(3){
@@ -66,20 +66,18 @@ nav li a {
     background-image: url('bg4.jpg');
 }
 
-.container:nth-child(6){
-    background-image: url('bg5.jpg');
-}
 #welcome{
-    width:40%;
+    width:60%;
     height:40%;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(10,10,10,30%);
+    background-color: rgba(10,10,10,20%);
     padding:0 20px 0 20px;
     border-radius:2px;
     text-align: center;
+    backdrop-filter: blur(3px);
 }
 h1{
     font-size: 300%;
